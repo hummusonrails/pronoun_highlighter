@@ -20,7 +20,7 @@ import Header from '../components/header';
     render() {
 
       const formattedText = 
-        this.state.textInput.length > 0 ? this.state.textInput.split(" ").map(word => <EvalText word={word} />) : 'Waiting for your input.'
+        this.state.textInput.length > 0 ? this.state.textInput.split(" ").map(word => <EvalText word={word.split("'")[0]} />) : 'Waiting for your input.'
       return (
         <div>
           <style jsx>{`
