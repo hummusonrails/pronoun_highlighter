@@ -3,9 +3,8 @@ import {femaleList, maleList, neutralList} from './words';
 class EvalText extends React.Component {
   render() {
     const wordHighlight =
-      femaleList.includes(this.props.word.toLowerCase().replace(/[^A-Za-z0-9]/g, '')) ? "femaleWord" : 
-        maleList.includes(this.props.word.toLowerCase().replace(/[^A-Za-z0-9]/g, '')) ? "maleWord" :
-          neutralList.includes(this.props.word.toLowerCase().replace(/[^A-Za-z0-9]/g, '')) ? "neutralWord" : "neutralWord" 
+      femaleList.includes(this.props.word.toLowerCase().replace(/[\W].*/g, '')) ? "femaleWord" : 
+        maleList.includes(this.props.word.toLowerCase().replace(/[\W].*/g, '')) ? "maleWord" : "neutralWord"
 
     return (
     <div className="textBox">
