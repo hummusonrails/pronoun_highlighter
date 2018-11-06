@@ -2,7 +2,7 @@ const Header = () => {
   return (
     <div>
       <style jsx>{`
-      @import url('https://fonts.googleapis.com/css?family=Kumar+One+Outline');
+      @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');      
       
       .header-area {
         display: flex;
@@ -13,9 +13,13 @@ const Header = () => {
       }
 
       .header-text {
-        font-family: 'Kumar One Outline', cursive;
-        font-size: 36px;
+        font-family: 'Permanent Marker', cursive;
+        font-size: 48px;
         color: white;
+      }
+
+      mark {
+        color: red;
       }
 
     `}</style>
