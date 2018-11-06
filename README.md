@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The purpose of this project is to highlight in the texts we create and the texts we read the gender biases inherent within them. How often do we assume the default person is a __he__ or a __she__? The project takes any text inputted into the text are and auto highlights every gendered pronoun with a stereotypical "gendered color". (*Note: I do not believe there are such things as "gendered colors," but nonetheless, defaulting to pink for female pronouns and blue for male pronouns makes it visually easy for the user to see right away which ones they are using.*)
+The purpose of this project is to highlight in the texts we create and the texts we read the gender biases inherent within them. How often do we assume the default person is a __he__ or a __she__? The project takes any text inputted into the text area and auto highlights every gendered pronoun with a stereotypical "gendered color". (*Note: I do not believe there are such things as "gendered colors," but nonetheless, defaulting to pink for female pronouns and blue for male pronouns makes it visually easy for the user to see right away which ones they are using.*)
 
 ## Installation
 
