@@ -1,14 +1,21 @@
 import EvalText from '../components/evaltext';
 import Header from '../components/header';
+import Counters from '../components/counters';
+import {femaleList, maleList, neutralList} from '../components/words';
+import { countInstances } from '../logic/count_func';
 
   class Index extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
-        textInput: ''
+        textInput: '',
+        maleCount: 0,
+        femaleCount: 0,
+        neutralCount: 0
       };
   
       this.handleChange = this.handleChange.bind(this);
+      this.analyzeText = this.analyzeText.bind(this);
     }
   
     handleChange(event) {
@@ -16,11 +23,22 @@ import Header from '../components/header';
         textInput: event.target.value
       });
     }
+
+    analyzeText(event) {
+      event.preventDefault();
+      this.setState({
+        maleCount: countInstances(maleList, this.state.textInput.split(" ")),
+        femaleCount: countInstances(femaleList, this.state.textInput.split(" ")),
+        neutralCount: countInstances(neutralList, this.state.textInput.split(" "))
+      });
+      console.log(this.state)
+    }
   
     render() {
 
       const formattedText = 
         this.state.textInput.length > 0 ? this.state.textInput.split(" ").map(word => <EvalText word={word} />) : 'Waiting for your input.'
+
       return (
         <div>
           <style jsx>{`
@@ -44,6 +62,14 @@ import Header from '../components/header';
               margin: 6px;
               background: black;
             }
+            .counter-box {
+              margin-top: 22em;
+              padding: 0px 2px 0px 1px;
+              border-radius: 10px;
+              border-width: 5px;
+              border-style: outset;
+              border-color: red;
+            }
           `}</style>
           <Header />
           <div className="main-content-wrapper">
@@ -51,10 +77,16 @@ import Header from '../components/header';
               <form>            
                   <textarea rows="30" cols="60" value={this.state.value} onChange={this.handleChange} id="input-area" />
               </form>
+              <button onClick={(event) => this.analyzeText(event)}>Analyze Text</button>
             </div>
             <div className="divider"></div>
             <div className="text-area">
               {formattedText}
+              <div className="counter-box">
+                <Counters 
+                  femaleNum={this.state.femaleCount} maleNum={this.state.maleCount} neutralNum={this.state.neutralCount} 
+                />
+              </div>
             </div>
           </div>
 ß        </div>
