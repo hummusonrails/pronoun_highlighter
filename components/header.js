@@ -10,9 +10,13 @@ const Header = () => {
       
       * {
         box-sizing: border-box;
-        background-color: black;
         margin-bottom: 10px;
+      }
 
+      header {
+        border-width: 1px;
+        border-style: solid solid dashed solid;
+        border-color: blue;
       }
       
       body {
@@ -22,12 +26,12 @@ const Header = () => {
       h1, h2, h3 {
         font-family: "Playfair Display";
         font-size: 36px;
-        color: white;
+        color: black;
       }
       
       a {
         text-decoration: none;
-        color: white;
+        color: black;
       }
       
       li {
@@ -60,7 +64,7 @@ const Header = () => {
 
       mark {
         font-family: 'Permanent Marker';
-        color: yellow;
+        color: black;
       }
 
       img {
