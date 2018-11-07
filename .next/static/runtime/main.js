@@ -5706,7 +5706,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      (0, _sourceMapSupport.rewriteStacktrace)(error, "/Users/bengreenberg/Development/gender_project/.next");
+      (0, _sourceMapSupport.rewriteStacktrace)(error, "/Users/doughty/bc/submittedhw/unit12/pronoun_highlighter/.next");
       return error;
     }
   };
@@ -17966,7 +17966,7 @@ module.exports = function(module) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/bengreenberg/Development/gender_project/node_modules/next/dist/client/next-dev */"./node_modules/next/dist/client/next-dev.js");
+module.exports = __webpack_require__(/*! /Users/doughty/bc/submittedhw/unit12/pronoun_highlighter/node_modules/next/dist/client/next-dev */"./node_modules/next/dist/client/next-dev.js");
 
 
 /***/ }),
