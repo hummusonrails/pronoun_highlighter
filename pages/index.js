@@ -1,3 +1,4 @@
+import Head from '../components/head';
 import EvalText from '../components/evaltext';
 import Header from '../components/header';
 import Counters from '../components/counters';
@@ -41,6 +42,7 @@ import { countInstances } from '../logic/count_func';
 
       return (
         <div>
+          <Head />
           <style jsx>{`
             @import url('https://fonts.googleapis.com/css?family=Kumar+One+Outline');
             
@@ -58,7 +60,7 @@ import { countInstances } from '../logic/count_func';
               margin-right: 5px;
             }
             .divider {
-              width: 10px;
+              width: 1px;
               margin: 6px;
               background: black;
             }
@@ -89,7 +91,7 @@ import { countInstances } from '../logic/count_func';
               </div>
             </div>
           </div>
-ß        </div>
+        </div>
       );
     }
   }
