@@ -32,7 +32,6 @@ class Index extends React.Component {
       femaleCount: countInstances(femaleList, this.state.textInput.split(" ")),
       neutralCount: countInstances(neutralList, this.state.textInput.split(" "))
     });
-    console.log(this.state)
   }
 
   render() {
@@ -84,7 +83,7 @@ class Index extends React.Component {
           `}</style>
         <Header />
         <div className="main-content-wrapper">
-        <div className="analyze">
+          <div className="analyze">
             <button onClick={(event) => this.analyzeText(event)}>Analyze Text</button>
           </div>
           <div className="counter-box">
