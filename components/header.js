@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <header class="header">
+    <header className="header">
       <style jsx>{`
       @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');      
       @import url(https://fonts.googleapis.com/css?family=Playfair+Display);

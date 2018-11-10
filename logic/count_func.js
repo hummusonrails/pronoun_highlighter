@@ -1,7 +1,8 @@
 export const countInstances = (listArr, inputArr) => {
   let counter = 0;
-  for (let i = 0; i <= inputArr.length; i++) {
-    if (listArr.includes(inputArr[i])) {
+  let inputToLower = inputArr.join(" ").toLowerCase().split(" ");
+  for (let i = 0; i <= inputToLower.length; i++) {
+    if (listArr.includes(inputToLower[i])) {
       counter += 1;
     };
   }; 
