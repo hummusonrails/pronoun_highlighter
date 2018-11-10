@@ -2,7 +2,7 @@ export const femaleList = [
   'she',
   'her',
   'hers',
-  'herself',
+  'herself'
 ]
 export const maleList = [
   'he',
