@@ -46,68 +46,59 @@ class Index extends React.Component {
         <style jsx>{`
             @import url('https://fonts.googleapis.com/css?family=Kumar+One+Outline');
             
-
             .main-content-wrapper {
               display: grid;
               grid-template-columns: 1fr 1fr;
-              // grid-template-rows: 1fr 1fr;
+              grid-gap: 2em;
+            }
+            .analyze {
+              display: flex;
+              align-items: flex-end;
+            }
+            .counter-box {
+              padding: 0px 2px 0px 1px;
             }
             .form-area {
               margin-right: 5px;
             }
-            .divider {
-              width: 1px;
-              margin: 6px;
-              background: black;
-            }
             .text-area {
-              // background-color: #eee;
-            }
-            .counter-box {
-              padding: 0px 2px 0px 1px;
-              // background-color: #eee;
+              border: 1px solid black;
             }
             button {
               padding: 10px 20px;
               background-color: transparent;
               border-radius: 10px;
             }
+            button:focus {
+              outline: none;
+            }
             textarea {
               resize: none;
+              border: 1px solid black;
+              box-sizing: border-box;
+              width: 100%;
             }
-            @media only screen and (max-width: 600px) {
-              .main-content-wrapper {
-                display: grid;
-                grid-template-areas: "1fr 1fr"
-                                     "1fr"
-                                     "1fr";
-                grid-gap
-                // grid-template-columns: 1fr;
-                // grid-template-rows: 1fr 1fr;
-              }
-              .analyze, .counter-box  {
-                order: -1;
-                padding-bottom: 2em;
-              }              
+            textarea:focus {
+              outline: none;
             }
           `}</style>
         <Header />
         <div className="main-content-wrapper">
-          <div className="form-area">
-            <form>
-              <textarea rows="30" cols="60" value={this.state.value} onChange={this.handleChange} id="input-area" placeholder="Start typing here"/>
-            </form>
-          </div>
-          <div className="text-area">
-            {formattedText}
-          </div>
-          <div className="analyze">
+        <div className="analyze">
             <button onClick={(event) => this.analyzeText(event)}>Analyze Text</button>
           </div>
           <div className="counter-box">
             <Counters
               femaleNum={this.state.femaleCount} maleNum={this.state.maleCount} neutralNum={this.state.neutralCount}
             />
+          </div>
+          <div className="form-area">
+            <form>
+              <textarea rows="30" value={this.state.value} onChange={this.handleChange} id="input-area" placeholder="Start typing here"/>
+            </form>
+          </div>
+          <div className="text-area">
+            {formattedText}
           </div>
         </div>
       </div>
