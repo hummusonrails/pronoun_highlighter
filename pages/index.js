@@ -6,6 +6,7 @@ import FormErrors from '../components/formErrors';
 import { femaleList, maleList, neutralList } from '../components/words';
 import { countInstances } from '../logic/count_func';
 import { getWebText } from '../logic/url_input_func';
+import validator from 'validator';
 
 class Index extends React.Component {
   constructor(props) {
@@ -48,7 +49,7 @@ class Index extends React.Component {
 
     switch(fieldName) {
       case 'url':
-        urlValid = value.match(/^((https?):\/\/)?([w|W]{3}\.)+[a-zA-Z0-9\-\.]{3,}\.[a-zA-Z]{2,}(\.[a-zA-Z]{2,})?$/);
+        urlValid = validator.isURL(value);
         urlValidationErrors.url = urlValid ? '' : ' address is invalid';
         break;
       default:
