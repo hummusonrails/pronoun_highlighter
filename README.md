@@ -24,4 +24,8 @@ I welcome contributions to the project! Please consider the following two ways t
 1. Please review the [Issues](https://github.com/benhayehudi/pronoun_highlighter/issues) tab to see if there are any open issues you would like to work on.
 2. Please suggest new features that might enhance the project. You are welcome to either start a conversation first on it, or build it out and submit a pull request. 
 
-Please review the [Code of Conduct](https://github.com/benhayehudi/pronoun_highlighter/blob/master/CODE_OF_CONDUCT.md) before making a contribution. It is imperative that thi sis a space where all feel welcome and valued.
+Please review the [Code of Conduct](https://github.com/benhayehudi/pronoun_highlighter/blob/master/CODE_OF_CONDUCT.md) before making a contribution. It is imperative that this is a space where all feel welcome and valued.
+
+## License
+
+ISC © [Ben Greenberg](http://www.bengreenberg.org)

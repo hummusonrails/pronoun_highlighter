@@ -1,6 +1,6 @@
 ISC License
 
-Copyright (c) [2018], [The Gender Pronoun Highlighter]
+Copyright (c) 2018, Ben Greenberg
 
 Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted, provided that the above
