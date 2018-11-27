@@ -16,6 +16,13 @@ git clone https://github.com/benhayehudi/pronoun_highlighter.git
 npm install
 npm run dev
 ```
+## Testing
+
+To run tests:
+
+```
+npm test
+```
 
 ## Contributing
 
