@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="jsx-725514212 textBox"
+>
+  <div
+    className="jsx-725514212 counter-area"
+  >
+    Female Count: 
+    1
+  </div>
+  <div
+    className="jsx-725514212 counter-area"
+  >
+    Male Count: 
+    2
+  </div>
+  <div
+    className="jsx-725514212 counter-area"
+  >
+    Neutral Count: 
+    3
+  </div>
+</div>
+`;
