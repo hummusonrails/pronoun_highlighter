@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`does not match any list words 1`] = `
+<div
+  className="jsx-920209421 textBox"
+>
+  <span
+    className="jsx-920209421 neutralWord"
+  >
+    sunset
+  </span>
+</div>
+`;
+
+exports[`render gender female 1`] = `
+<div
+  className="jsx-920209421 textBox"
+>
+  <span
+    className="jsx-920209421 femaleWord"
+  >
+    her
+  </span>
+</div>
+`;
+
+exports[`render gender neutral 1`] = `
+<div
+  className="jsx-920209421 textBox"
+>
+  <span
+    className="jsx-920209421 neutralWord"
+  >
+    them
+  </span>
+</div>
+`;
+
+exports[`renders gender female 1`] = `
+<div
+  className="jsx-920209421 textBox"
+>
+  <span
+    className="jsx-920209421 femaleWord"
+  >
+    her
+  </span>
+</div>
+`;
+
+exports[`renders gender male 1`] = `
+<div
+  className="jsx-920209421 textBox"
+>
+  <span
+    className="jsx-920209421 maleWord"
+  >
+    him
+  </span>
+</div>
+`;
